@@ -137,14 +137,14 @@ var controller = lib.AddressController;
 
 
 ```javascript
-function getByPostcode(postcode, country, callback)
+function getByPostcode(country, postcode, callback)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| postcode |  ``` Required ```  | TODO: Add a parameter description |
-| country |  ``` Required ```  | TODO: Add a parameter description |
+| country |  ``` Required ```  | country abbreviation to search address |
+| postcode |  ``` Required ```  | postcode number |
 
 
 
@@ -152,10 +152,10 @@ function getByPostcode(postcode, country, callback)
 
 ```javascript
 
-    var postcode = 'postcode';
     var country = 'country';
+    var postcode = 'postcode';
 
-    controller.getByPostcode(postcode, country, function(error, response, context) {
+    controller.getByPostcode(country, postcode, function(error, response, context) {
 
     
     });
