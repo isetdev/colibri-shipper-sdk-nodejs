@@ -203,15 +203,23 @@ function getQuote(callback)
 
 
 ```javascript
-function createQuote(callback)
+function createQuote(quote, callback)
 ```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| quote |  ``` Required ```  | quote input to calculate freight |
+
+
 
 #### Example Usage
 
 ```javascript
 
+    var quote = new Quote({"key":"value"});
 
-    controller.createQuote(function(error, response, context) {
+    controller.createQuote(quote, function(error, response, context) {
 
     
     });
