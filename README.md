@@ -133,7 +133,7 @@ var controller = lib.AddressController;
 
 ### <a name="get_by_postcode"></a>![Method: ](https://apidocs.io/img/method.png ".AddressController.getByPostcode") getByPostcode
 
-> TODO: Add a method description
+> Endpoint to get address by country and postcode
 
 
 ```javascript
@@ -152,8 +152,8 @@ function getByPostcode(country, postcode, callback)
 
 ```javascript
 
-    var country = 'country';
-    var postcode = 'postcode';
+    var country = 'BR';
+    var postcode = '31275060';
 
     controller.getByPostcode(country, postcode, function(error, response, context) {
 
@@ -177,7 +177,7 @@ var controller = lib.QuoteController;
 
 ### <a name="get_quote"></a>![Method: ](https://apidocs.io/img/method.png ".QuoteController.getQuote") getQuote
 
-> TODO: Add a method description
+> Endpoint to verify if all services still working fine
 
 
 ```javascript
@@ -199,7 +199,7 @@ function getQuote(callback)
 
 ### <a name="create_quote"></a>![Method: ](https://apidocs.io/img/method.png ".QuoteController.createQuote") createQuote
 
-> TODO: Add a method description
+> Endpoint to get quotation freight according to sender, destiny and items for each service
 
 
 ```javascript
